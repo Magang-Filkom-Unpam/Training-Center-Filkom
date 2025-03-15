@@ -7,7 +7,7 @@ const DefaultLayout = () => {
             <main>
                 <Outlet/>
             </main>
-            // footer
+            <div>Footer</div>
         </>
     );
 };
