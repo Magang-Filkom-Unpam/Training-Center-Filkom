@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 
-const DefaultLayout = () => {
+const LayoutDefault = () => {
     return (
         <>
             <div>header</div>
@@ -12,4 +12,4 @@ const DefaultLayout = () => {
     );
 };
 
-export default DefaultLayout;
+export default LayoutDefault;
