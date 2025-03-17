@@ -1,23 +1,28 @@
-import {createBrowserRouter} from "react-router-dom";
-import DefaultLayout from "../components/templates/DefaultLayout.jsx";
-import HomePage from "../pages/homePage.jsx";
-import BbbbbbPage from "../pages/bbbbbbPage.jsx";
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App.jsx';
 
-const router = createBrowserRouter([
+// import pages
+import CoursePage from '@/pages/CoursePage/index.jsx';
+import HomePage from '@/pages/HomePage/index.jsx';
+import NewsroomPage from '@/pages/NewsroomPage/index.jsx';
+
+export const router = createBrowserRouter([
     {
         path: '/',
-        element: <DefaultLayout/>,
+        element: <App />,
         children: [
             {
-                path: '/',
-                element: <HomePage/>
+                index: true,
+                element: <HomePage />,
             },
             {
-                path: '/about',
-                element: <BbbbbbPage/>
-            }
-        ]
-    }
+                path: '/course',
+                element: <CoursePage />,
+            },
+            {
+                path: '/newsroom',
+                element: <NewsroomPage />,
+            },
+        ],
+    },
 ]);
-
-export default router;
