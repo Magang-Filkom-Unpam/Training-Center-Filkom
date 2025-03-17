@@ -1,3 +1,7 @@
-/.idea
+# Ignore editor configurations
+.idea/
+.vscode/
+
+# Ignore frontend-specific files
 /frontend/.idea
 /frontend/node_modules
